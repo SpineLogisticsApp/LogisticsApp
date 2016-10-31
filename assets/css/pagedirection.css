@@ -1,0 +1,55 @@
+
+.sidebar{ left: auto;right: 0;}
+.sidebar-bg{  right: 0 !important; left: initial !important;}
+.content{  margin-left: 0 !important; margin-right: 220px;}
+.nav{ padding-right: 0px; direction: rtl;}
+
+@media (min-width: 768px){
+.navbar-right {float: left!important;} 
+.navbar-nav>li {float: right!important;} 
+.navbar-nav>li , .nav{direction: rtl;}
+  }
+  .sidebar .nav>li>a i{float: right; margin-left: 10px !important;}
+  
+  
+  .navbar-right {float: left!important;} 
+  .sidebar-bg{  position: initial;}
+  .page-sidebar-toggled .sidebar-bg {position: initial;}
+  .panel-heading, .panel-body{direction: rtl;}
+  .panel-heading-btn  , .pull-right{float: left !important;}
+  .container-fluid>.navbar-header, .nav-pills>li+li , .nav-pills>li { float: right !important;}
+  .page-header{  line-height: 20px !important;}
+@media (min-width: 992px){
+  
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4 , .col-md-5, .col-md-6 , 
+  .col-md-7, .col-md-8, .col-md-9, .col-md-12
+  { float: right !important;}
+ 
+  }
+  @media (max-width: 992px){   .panel-heading{margin-top: 35px;} }
+  @media (max-width: 768px){   .panel-heading{margin-top: 75px;} }
+  
+  .panel-title, .widget.widget-stats {direction: rtl;}
+  .page-header{float:right;}
+  
+  .input-group-addon:last-child , .input-group-addon:not(:first-child):not(:last-child){
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  }
+  
+  
+  .form-control-feedback{left: 45px !important;right: initial;}
+  .form-horizontal .has-feedback .form-control-feedback{right: initial;}
+  .bootstrap-select.btn-group .btn .filter-option{ text-align: right;}
+  .bootstrap-select.btn-group .btn .caret{  right: initial;left: 10px; }
+  .bootstrap-select.btn-group .dropdown-menu li {  text-align: right !important;}
+  .dropdown-menu {  right: 0px !important;}
+  .widget-stats .stats-icon{right: initial;left: 0px;}
+  
+  .nav-tabs>li {  float: right !important;}
+  .navbar-form .btn-search{left: 10px !important; right: initial;}
+  @media (min-width: 545px) and (max-width: 767px)  {.page-with-right-sidebar .content{ margin-top: -60px !important;}}
+  @media (min-width: 760px) and (max-width: 991px)  {.panel.panel-inverse{ margin-top: 50px;} }
+

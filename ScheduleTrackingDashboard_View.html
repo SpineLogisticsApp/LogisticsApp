@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta content=
+    "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+    name="viewport">
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/animate.min.css" rel="stylesheet" />
+	<link href="assets/css/style.min.css" rel="stylesheet" />
+	<link href="assets/css/style-responsive.min.css" rel="stylesheet" />
+	<link href="assets/css/theme/default.css" rel="stylesheet" id="theme" />
+    <link href="assets/plugins/bootstrap-validation/css/bootstrapValidator.css" rel="stylesheet" />
+	<!--<link href="assets/css/awesomplete.css" rel="stylesheet" />-->
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE  wizard================== -->
+	<link href="assets/plugins/bootstrap-wizard/css/bwizard.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+ 
+	
+	<!-- ================== START SELECT PICKER GO================== -->
+	
+	 <link rel="stylesheet" href="assets/selectpicker/css/bootstrap-select_table.css">
+	 <script src="assets/selectpicker/js/bootstrap-select_table.js"></script>
+	 
+	<script src="assets/plugins/bootstrap-select/bootstrap-select1.min.js"></script>
+	<!-- ================== END SELECT PICKER GO================== -->
+	
+	
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE Data tables================== -->
+	<link href="assets/plugins/DataTables/css/data-table.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE Form plugin================== -->
+	<link href="assets/plugins/bootstrap-datetimepicker2/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/ionRangeSlider/css/ion.rangeSlider.css" rel="stylesheet" />
+	<link href="assets/plugins/ionRangeSlider/css/ion.rangeSlider.skinNice.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+	<link href="assets/plugins/password-indicator/css/password-indicator.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-combobox/css/bootstrap-combobox.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet" />
+	<link href="assets/plugins/jquery-tag-it/css/jquery.tagit.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+
+	<!-- ================== BEGIN PAGE LEVEL STYLE show or hide column================== -->
+	<link href="assets/plugins/DataTables/css/data-table.css" rel="stylesheet" />
+    <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+	
+	<!--loader-->
+	<link href="css/jquery.loader.css" rel="stylesheet" />
+	<!--end loader-->
+	
+	<!-- ================== Browse button custom================== -->
+	<link href="assets/plugins/browse-button/filecss.css" rel="stylesheet" />
+	<link href="assets/compiled/flipclock.css" rel="stylesheet"/>
+	<script src="js/jquery.min.js"></script>
+	<script src="assets/plugins/browse-button/filejs.js"></script>
+	<script src="assets/compiled/flipclock.min.js"></script>
+	<!-- ================== START PAGE LEVEL STYLE ================== -->
+		
+	<!-- ================== END WEBQR JS ================== -->
+	<style>
+		.panel-heading {
+		border: 1px solid #ddd !important;
+		border-bottom: 1px solid transparent;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		padding: 10px 15px;
+		}
+		.flip-clock-wrapper {
+		margin: 13px 0 0 1px !important;
+		}
+		@media only screen and (min-device-width: 768px) and (max-device-width: 991px){
+		.modal-lg{
+			width: 728px;
+		}
+		}
+		.flip-clock-wrapper .flip {
+		box-shadow: none !important;
+		}
+		.flip-clock-wrapper ul {
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+		margin: -3px -3px -6px -16px !important;
+		height: 24px !important;
+		}
+		.flip-clock-wrapper ul li {
+		width: 46% !important;
+		height: 100% !important;
+		line-height: 25px !important;
+		}
+		.flip-clock-wrapper ul li a div div.inn {
+		font-size: 20px !important;
+		}
+		.flip-clock-divider {
+		margin: -8px !important;
+		height: 38px !important; 
+		}    
+		.flip-clock-dot {
+		height: 5px !important;
+		left: -9px !important;
+		width: 3px !important;
+		}
+		.flip-clock-dot.top {
+		top: 11px !important;
+		}
+		.flip-clock-wrapper {
+		font: 9px "Helvetica Neue",Helvetica,sans-serif !important;
+		}
+		.flip-clock-divider .flip-clock-label {
+		top: -6.5px !important;
+		}
+		.flip-clock-divider .flip-clock-label {
+		margin: -1px -18px 0 0 !important;
+		right: 0px !important;
+		}
+		.flip-clock-divider.minutes .flip-clock-label {
+		right: 8px !important;
+		}
+		.flip-clock-dot.bottom {
+		bottom: 13px !important;
+		}
+		.form-control.DL_BOX_NO {
+		width: 90px;
+		}
+		.input-xs {
+		border-radius: 3px;
+		font-size: 12px;
+		height: 22px;
+		line-height: 1.5;
+		padding: 5px 10px;
+		}
+		@media only screen and (min-device-width: 300px) and (max-device-width: 765px){
+			.mobileview{
+				margin-top: -54px;
+			}
+		}
+		
+		.linecolor {
+			background: #fde0fe none repeat scroll 0 0 !important;
+		}
+		
+		.offlinecolor {
+			background: #f8af9f none repeat scroll 0 0 !important;
+		}
+		.offline_live_editmode_color {
+			background: #f66262  none repeat scroll 0 0 !important;
+		}
+		
+
+	</style>
+	<style>
+	    .btn-group{
+		margin-bottom: 0;
+	    }  
+	    *{
+	      font-size: 15px;
+	    }
+	    input{
+		font-size: 17px !important;
+	    }
+	    /*
+	    @media only screen and (max-width: 768px){
+	    .rowfixedtop{
+		margin-top: -54px
+	      }
+	    .input-group{
+	      width: 100% !important;
+	    }*/
+	    }
+	    .panel-default > .panel-heading {
+	      background-color: #00acac !important;
+	    }
+	    
+	</style>
+</head>
+<body>
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade in page-sidebar-fixed page-header-fixed">
+        <!-- begin #header -->
+        <div id="header" class="header navbar navbar-default navbar-fixed-top">
+            <!-- begin container-fluid -->
+            
+                    <a href="" class="navbar-brand"><span class=""><img src="assets/img/mantis_logo.jpg" data-id="login-cover-image" alt="" /></span> </a>
+                   
+				<ul class="nav navbar-nav navbar-right">
+                    <li  class="dropdown navbar-user">
+                        <a  style="color:#000;" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span id="User_id"></span> <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInLeft">
+                            <li class="arrow"></li>
+							<li class="has-sub"><a onclick="refreshPage()"><i class="fa fa-repeat"></i><span style="padding-left:5px">Refresh</span></a></li>
+							<li id="DataCheck" class="has-sub hide"><a onclick="checkLocalTreeValue()"><i class="fa fa-refresh"></i><span style="padding-left:5px">Send</span></a></li>
+							<li class="has-sub"><a onclick="logout()"> <i class="fa fa-sign-out"></i><span style="padding-left:5px">Log Out</span></a></li>
+							<!-- <br>
+							<li class="has-sub"><a onclick="Local2Copy()">Local2Copy</a></li>
+							<li class="has-sub"><a onclick="Copy2Local()">Copy2Local</a></li> -->
+						</ul>
+                    </li>
+                </ul> 
+                <!--</div>-->
+				<!-- end header navigation right -->     
+               
+            </div>
+            <!-- end container-fluid -->
+        </div>
+        <!-- end #header -->
+        
+        <!-- begin #sidebar -->
+        
+	<!-- end #sidebar -->	
+	    
+
+		<!-- begin row -->
+		<div class="rowfixedtop mobileview">
+		    <!-- begin col-10 -->
+		    <div class="">
+			<!-- begin panel -->
+			<div class="panel panel-inverse">
+			    <div class="panel-heading">
+				<div class="panel-heading-btn"></div>
+				<h4 class="panel-title" style='font-size:20px'>Job Tracking</h4>
+			    </div>
+			    <div class="panel-body">
+					<div class="form-horizontal" id="form_validation" >
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="form-group selectedJob" id="OnlineSchedule">
+									<label class="col-md-4 control-label">Select Schedule</label>
+									<div class="col-md-8" id="SelectVehicle">
+										<select class="form-control selectpicker getselectpicker" onchange="getJobMeasurement(this);" name="LSH_SYS_ID" id="LSH_SYS_ID" data-live-search="true" data-style="btn-white"> 
+											<option >Select</option>
+											<option data-vehicle="LSH_VEHICLE_CODE" value="LSH_SYS_ID" ></option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group hide" id="OfflineSchedule">
+									<label class="col-md-4 control-label">Select Schedule</label>
+									<div class="col-md-8" id="SelectVehicle">
+										<input type="text" class="form-control" name="LSH_SYS_ID_NEW" id="LSH_SYS_ID_NEW"   readonly>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Vehicle Code</label>
+									<div class="col-md-8">
+										<input type="text" class="form-control" name="LSH_VEHICLE_CODE" id="LSH_VEHICLE_CODE"  placeholder="VEHICLE CODE" readonly>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Team Code</label>
+									<div class="col-md-8">
+										<input type="text" class="form-control" name="LSH_TEAM_CODE" id="LSH_TEAM_CODE"  placeholder="TEAM CODE" readonly>
+									</div>
+								</div>
+							   <div class="panel-body">
+									<center><h3>Job Statistics </h3></center>
+									<table class="table table-striped table-bordered nowrap" width=100%>
+									<tr>
+										<th>Total Jobs</th>
+										<td id="jobTotal">0</td>
+									</tr>
+									<tr>
+										<th>Completed</th>
+										<td id="jobCompleted">0</td>
+									</tr>
+									<tr>
+										<th>Rescheduled</th>
+										<td id="jobRescheduled">0</td>
+									</tr>
+									<tr>
+										<th>Closed</th>
+										<td id="jobClosed">0</td>
+									</tr>
+									<tr>
+										<th>Not Scheduled</th>
+										<td id="jobNotScheduled">0</td>
+									</tr>
+									<tr>
+										<th>Partialy Completed</th>
+										<td id="jobPartialyCompleted">0</td>
+									</tr>
+									<tr>
+										<th>Scheduled</th>
+										<td id="jobScheduled">0</td>
+									</tr>
+									<tr>
+										<th>Pending</th>
+										<td id="jobPending">0</td>
+									</tr>
+									</table>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel-body">
+							<div class="table-responsive " id="RemoveResponsive"></div>
+						</div>
+					</div>
+			    </div>
+			</div>
+		    </div>
+			<!-- end panel -->
+		</div>
+		    <!-- end col-10 -->
+	    
+
+	    <!-- begin scroll to top btn -->
+	    <a href="javascript:;" class="	btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+	    <!-- end scroll to top btn -->
+	    
+	<!-- end page container -->
+	
+				<div class="modal fade" id="modal-dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+						    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    	<div id="header_date"><h4> Response date</h4></div>
+								<div class="modal-body">
+								    <div class="panel-body">
+										<div class="form-horizontal" id="Form_data" >
+										    <div id="fancy_data">
+												<input type="hidden" name="LSL_SYS_ID1" id="LSL_SYS_ID1">
+											 	<div class="col-md-12">
+												    <div class="form-group">
+														<label class="col-md-5 control-label">Job Status</label>
+														<div class="col-md-7" id="SelectJobStatus" >
+															<select class="form-control selectpicker" name="LSL_JOB_STATUS" id="LSL_JOB_STATUS" data-live-search="true" data-style="btn-white">
+															  	<option id="JobStatus" >Select</option>
+																<option data-value="VSL_CODE" ></option>
+															</select>
+													    </div>
+												    </div>
+												    <div class="form-group">
+														<label class="col-md-5 control-label">Description</label>
+														<div class="col-md-7">
+														    <input type="text" class="form-control" name="ct_desc" id="ct_desc"/>
+														</div>
+													    </div>
+													   <div class="form-group">
+														   <label class="col-md-5 control-label">Re Scheduled Reason</label>
+														   <div class="col-md-7" id="SelectRescheduledReason"  >
+																<select disabled class="form-control selectpicker" name="LSL_RE_SCH_REASON" id='LSL_RE_SCH_REASON' data-live-search="true" data-style="btn-white">
+															    	<option id="Reschedule" >Select</option>
+																	<option data-value="VSL_CODE" ></option>
+																</select>
+														    </div>
+														</div> 
+												    <div class="form-group">
+														<label class="col-md-5 control-label">Rescheduled Date</label>
+														<div class="col-md-7">
+														    <input type="text" class="form-control input-group datepicker-txn" name="ct_longitude" id="ct_longitude"/>
+														    
+														</div>    
+												    </div>
+												    <div class="form-group">
+														<div class="col-md-7">
+														    <input type="submit" class="btn btn-sm btn-success" name="Update" value="Save">
+														</div>    
+												    </div>
+												</div> 
+										    </div>
+										</div>
+								    </div>
+								</div>
+								<div class="modal-footer">
+							    	<a href="javascript:;" class="btn btn-sm btn-white" data-dismiss="modal">Close</a>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- Delivery Node model box start -->
+				
+				<div class="modal fade" id="modal-dia" role="dialog">
+				   <div class="modal-dialog">
+					<div class="modal-content">
+					    <div class="modal-header">
+						<img src="assets/img/mantis_logo.jpg" data-id="login-cover-image" alt="" />
+						<button aria-hidden="true" data-dismiss="modal" class="close" type="button" onClick="onClickHandler(this)"><i class="fa  fa-times-circle "></i></button>
+					    </div>
+					    <div class="modal-body">
+						<div class="row">
+						    <div class="col-sm-12">
+							      <center>
+									<div class="form-group col-sm-12">
+									  </div>
+									  <div class="form-group col-sm-12">
+										<button type="button"  onclick="captureScan()" class="btn btn-add2 btn-sm btn-success" data-template="textbox">Scan</button>
+										<div id="results"></div>
+									  </div>
+							      </center>
+						    </div>
+						</div>
+						<div class="row">
+						    <div class="col-sm-12">
+								<div class="table-responsive" id="displaytable">
+								</div>
+						    </div>
+						</div>
+					    </div>
+					    <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					    </div>
+					</div>
+				    </div>
+				</div>
+				<!-- Delivery Node Model Box end -->
+					
+						<!-- ================== JS ================== -->
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+	$('body').addClass('loading').loader('show', { overlay: true });
+	setTimeout(unLoader, 1000);
+});
+
+function loadLoader() {
+	//alert("load");
+	$('body').addClass('loading').loader('show', { overlay: true });
+}
+function unLoader() {
+alert("unLoader");
+	$('body').removeClass('loading').loader('hide');
+}
+
+</script> -->					
+
+					
+						
+<script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+	//checkConnection();
+}
+function checkConnection() {
+	var networkState = navigator.network.connection.type;
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection'; 
+    states[Connection.NONE]     = 'No network connection';
+	//alert('[Connection](connection.html) type: ' + states[networkState]);
+    if(states[networkState] == 'No network connection'){
+    	offlineSchedule(); 
+    }else{
+		//if(localStorage.getItem('syncStatus')=='measure'){}
+    	getJobDate();
+		//offlineSchedule();
+    }
+}
+
+</script>					
+	
+<script type="text/javascript">
+var user_name = localStorage.getItem("user_id");
+document.getElementById("User_id").innerHTML = user_name;
+if(user_name==null){
+	window.open('index.html', '_blank','location=no');
+}
+
+function refreshPage(){
+	window.location.reload(true);
+}
+
+function logout(){
+	localStorage.clear();
+	window.open('index.html', '_blank','location=no');
+}
+
+</script>
+	
+    <script type="text/javascript">
+		$(document).ready(function() {
+			App.init();
+		});
+	</script>
+	
+	<!-- =================== BEGIN CORDOVA JS ===================== -->
+	
+	
+	<!-- =================== END CORDOVA JS ===================== -->
+	
+	  <!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="http://cdn.jagansindia.in/webrupee" type="text/javascript"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap-validation/js/bootstrapValidator.js"></script>
+	<!--Dashboard Start-->
+	<script src="assets/js/dashboard.min.js"></script>
+	<script src="assets/plugins/flot/jquery.flot.min.js"></script>
+	<script src="assets/plugins/sparkline/jquery.sparkline.js"></script>
+	<!--Dashboard End-->
+
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+        
+	<!--====================== MOMENT JS INCLUDE START ===============-->
+	<script src="assets/plugins/moment/moment.min.js"></script>
+	<!--====================== MOMENT JS INCLUDE END ===============-->
+	
+	<!-- ================== START EXPORT================== -->
+	<script type="text/javascript" src="assets/plugins/export/tableExport.js"></script>
+    <script type="text/javascript" src="assets/plugins/export/jquery.base64.js"></script>
+	<script type="text/javascript" src="assets/plugins/export/jspdf/libs/sprintf.js"></script>
+	<script type="text/javascript" src="assets/plugins/export/jspdf/jspdf.js"></script>
+	<script type="text/javascript" src="assets/plugins/export/jspdf/libs/base64.js"></script>
+	<!-- ================== END EXPORT================== -->
+
+	
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS Data tables================== -->
+	
+	
+	<script src="assets/plugins/DataTables/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/js/dataTables.responsive.js"></script>
+	<script src="assets/js/table-manage-responsive.demo.min.js"></script>
+	
+	
+        <!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS Form plugin================== -->
+	<script src="assets/plugins/bootstrap-datetimepicker2/js/moment-with-locales.js"></script>
+	<script src="assets/plugins/bootstrap-datetimepicker2/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="assets/plugins/ionRangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+	<script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+	<script src="assets/plugins/masked-input/masked-input.min.js"></script>
+	<script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<script src="assets/plugins/password-indicator/js/password-indicator.js"></script>
+	<script src="assets/plugins/bootstrap-combobox/js/bootstrap-combobox.js"></script>
+	<script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+	<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-typeahead.js"></script>
+	<script src="assets/plugins/jquery-tag-it/js/tag-it.min.js"></script>
+	<script src="assets/js/form-plugins.demo.min.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS hide column================== -->
+	<script src="assets/plugins/DataTables/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/js/dataTables.autoFill.js"></script>
+	<script src="assets/plugins/DataTables/js/dataTables.colVis.js"></script>
+	<script src="assets/plugins/DataTables/js/dataTables.fixedHeader.js"></script>
+	<script src="assets/plugins/DataTables/js/dataTables.keyTable.js"></script>
+	<script src="assets/plugins/DataTables/js/dataTables.tableTools.js"></script>
+	<script src="assets/js/table-manage-combine.demo.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	  
+	
+	<!-- ================== BEGIN PAGE LEVEL JS wizard ================== -->
+
+	<script src="assets/plugins/bootstrap-wizard/js/bwizard.js"></script>
+	<script src="assets/js/form-wizards.demo.min.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL Currency Format ================== -->
+	<script type="text/javascript" src="assets/js/jquery.formatCurrency-1.4.0.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<!-- ================== Begin formValidation packages================== -->
+	<link href="assets/plugins/formValidation/css/formValidation.css" rel="stylesheet" />
+	<script src="assets/plugins/formValidation/js/formValidation.js"></script>
+	<script src="assets/plugins/formValidation/js/framework/bootstrap.min.js"></script>
+	<!-- ================== End formValidation packages================== -->
+	
+
+		<!-- ================== BEGIN WEBQR JS ================== -->
+			<script src="assets/js/bootbox.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/qrjs/llqrcode.js"></script>
+			<script type="text/javascript" src="assets/plugins/qrjs/webqr.js"></script>
+			<script type="text/javascript" src="assets/plugins/qrjs/plusone.js"></script>
+		<!-- ================== END WEBQR JS ================== -->
+		
+		<!--loader js-->
+	<script type="text/javascript" src="assets/plugins/loader/jquery.loader.js"></script>
+	<!-- <script type="text/javascript" src="assets/plugins/qrjs/plusone.js"></script>
+	
+	<!--unloader js-->
+		
+		<!-- =================== BEGIN CORDOVA JS ===================== -->
+	<!-- <script src="js/Schedule.js" type="text/javascript"></script> 
+	-->
+	
+	 <script src="cordova.js" type="text/javascript"></script>
+	 <script src="js/Server2Local.js" type="text/javascript"></script>
+	 <script src="js/OfflineSchedule.js" type="text/javascript"></script>
+	 <script src="js/OnlineSchedule.js" type="text/javascript"></script>
+	 <script src="js/AddValueSync.js" type="text/javascript"></script>
+	 <script src="js/EditData2ServerSyncConn.js" type="text/javascript"></script>
+	 
+	 <!-- <script src="js/Local2ServerConnection.js" type="text/javascript"></script> -->
+	 <!-- <script src="js/Local2ServerConnectionNew.js" type="text/javascript"></script> -->
+		  
+	<!-- =================== END CORDOVA JS ===================== -->
+	   
+	
+		<!-- Append Table action start -->
+	<script type="text/javascript">
+		setTimeout(testas,500);
+		function testas(){
+			setTimeout(testas,500);
+			var networkState = navigator.network.connection.type;
+			var states = {};
+			states[Connection.UNKNOWN]  = 'Unknown connection';
+			states[Connection.ETHERNET] = 'Ethernet connection';
+			states[Connection.WIFI]     = 'WiFi connection';
+			states[Connection.CELL_2G]  = 'Cell 2G connection';
+			states[Connection.CELL_3G]  = 'Cell 3G connection';
+			states[Connection.CELL_4G]  = 'Cell 4G connection'; 
+			states[Connection.NONE]     = 'No network connection';
+			//alert('[Connection](connection.html) type: ' + states[networkState]);
+			if(states[networkState] == 'No network connection'){
+				//$('ul.dropdown-menu').find('li#DataCheck').addClass('disabled');
+				$('ul.dropdown-menu').find('li#DataCheck').addClass('hide');
+			}else{
+				//$('ul.dropdown-menu').find('li#DataCheck').removeClass('disabled');
+				$('ul.dropdown-menu').find('li#DataCheck').removeClass('hide');
+				
+			}
+		}
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		function onBackKeyDown() {
+			localStorage.setItem("syncStatus","schedule");
+			//navigator.app.exitApp();
+		}
+	
+	    function updates(LSL_SYS_ID)
+	    {
+	    	//refresh();
+			var sys_id = LSL_SYS_ID.toString();
+			var USER_COMP_CODE = localStorage.getItem("USER_COMP_CODE");
+			//alert(sys_id);
+			$.ajax
+			({
+			    type: "POST",
+			    url: "http://test.sedarspine.com/en/spineLogisticsApp/ajaxUpdateSTD12",
+			    data:{sys_id:sys_id,USER_COMP_CODE:USER_COMP_CODE},
+			    success: function (responseData1)
+			    {
+			    	//refresh();
+			    	$('#fancy_data').html(responseData1);
+					$('.selectpicker').selectpicker('refresh');
+					$('#Form_data').bootstrapValidator('addField','LSL_RE_SCH_REASON');
+					$('#Form_data').bootstrapValidator('addField','LSL_JOB_STATUS');
+					$('#Form_data').bootstrapValidator('addField','LSL_RE_SCH_DT');
+					$('#Form_data').bootstrapValidator('addField','LSL_EX_REMARKS');
+					//refresh();
+			    },
+			});
+	    }
+	    
+		function Gps_Location(LSL_SYS_ID)
+	    {
+			var sys_code = LSL_SYS_ID.toString();
+	        //alert("code-"+sys_code);
+	        localStorage.setItem("sys_code", sys_code);
+	        window.open('map.html', '_blank','location=no'); 
+	    }
+		
+		function TestGetDatafromLocal(){
+			var db = window.openDatabase("Spine", "1.0", "Spine Demo", 100 * 1024 * 1024);
+				db.transaction(GetDataLocal, errorCB);
+				function GetDataLocal(tx){
+					tx.executeSql('SELECT * FROM Live_Measure_Head ', [], function (tx, results1) {
+						var len=results1.rows.length;
+						alert(len);
+						for(var i=0; i<len;i++){
+							alert(results1.rows.item(i).MH_SYS_ID);
+							mesurementTransaction_add(12394);
+						}
+					});
+				}
+				function errorCB(tx, err) {
+					alert("Error");
+					//window.open('Measure_Add.html', '_blank','location=no');
+					//alert("Error processing SQL: "+err);
+				}
+			//alert("tets");
+			//mesurementTransaction_add('12394');
+		}
+		
+		
+		function mesurementTransaction_add(LSL_SYS_ID,mode) 
+	    { 
+			//alert(LSL_SYS_ID+"-"+mode);
+			
+			//alert(LSL_SYS_ID+"<------LSL_SYS_ID");
+			var db = window.openDatabase("Spine", "1.0", "Spine Demo", 100 * 1024 * 1024);
+			db.transaction(function(tx){
+				tx.executeSql('CREATE TABLE IF NOT EXISTS SelectedHeadDataValue (MH_SYS_ID INTEGER , MH_COMP_CODE TEXT, MH_LANG_CODE TEXT,MH_TXN_CODE TEXT, MH_TXN_NO TEXT, MH_TXN_DT TEXT,MH_DOC_REF TEXT, MH_LOCN_CODE TEXT, MH_SR_CODE TEXT,MH_REF_SYS_ID INTEGER, MH_REF_TXN_CODE TEXT, MH_REF_TXN_NO TEXT,MH_REF_TXN_DT TEXT, MH_SALE_REF_SYS_ID TEXT, MH_SALE_REF_TXN_CODE TEXT,MH_SALE_REF_TXN_NO TEXT, MH_SALE_REF_TXN_DT TEXT, MH_CONTACT_NO TEXT,MH_CONTACT_PERSON TEXT, MH_CUST_TYPE TEXT, MH_CUST_AC_CODE TEXT,MH_CUST_AC_DESC TEXT, MH_ADD1 TEXT, MH_ADD2 TEXT, MH_ADD3 TEXT, MH_ADD4 TEXT, MH_CN_CODE TEXT, MH_ST_CODE TEXT, MH_CT_CODE TEXT, MH_CT_AR_CODE TEXT, MH_POSTAL TEXT, MH_MOBILE TEXT, MH_PHONE TEXT, MH_FAX TEXT, MH_EMAIL TEXT, MH_DESC TEXT, MH_STATUS TEXT, MH_APPOINT_DT TEXT, MH_CR_DT TEXT, MH_CR_UID TEXT, MH_UPD_DT TEXT, MH_UPD_UID TEXT, MH_SEND_YN TEXT, MH_SEND_DT TEXT, MH_SEND_UID TEXT, MH_APPROVE_YN TEXT, MH_APPROVE_DT TEXT, MH_APPROVE_UID TEXT, MH_FLEX_01 TEXT, MH_FLEX_02 TEXT, MH_FLEX_03 TEXT, MH_FLEX_04 TEXT, MH_FLEX_05 TEXT, MH_FLEX_06 TEXT, MH_FLEX_07 TEXT, MH_FLEX_08 TEXT, MH_FLEX_09 TEXT, MH_FLEX_10 TEXT, MH_FLEX_11 TEXT, MH_FLEX_12 TEXT, MH_FLEX_13 TEXT, MH_FLEX_14 TEXT, MH_FLEX_15 TEXT, MH_FLEX_16 TEXT, MH_FLEX_17 TEXT, MH_FLEX_18 TEXT, MH_FLEX_19 TEXT, MH_FLEX_20 TEXT) ');
+				tx.executeSql('CREATE TABLE IF NOT EXISTS Live_Measure_Head (MH_SYS_ID INTEGER , MH_COMP_CODE TEXT, MH_LANG_CODE TEXT,MH_TXN_CODE TEXT, MH_TXN_NO TEXT, MH_TXN_DT TEXT,MH_DOC_REF TEXT, MH_LOCN_CODE TEXT, MH_SR_CODE TEXT,MH_REF_SYS_ID INTEGER, MH_REF_TXN_CODE TEXT, MH_REF_TXN_NO TEXT,MH_REF_TXN_DT TEXT, MH_SALE_REF_SYS_ID TEXT, MH_SALE_REF_TXN_CODE TEXT,MH_SALE_REF_TXN_NO TEXT, MH_SALE_REF_TXN_DT TEXT, MH_CONTACT_NO TEXT,MH_CONTACT_PERSON TEXT, MH_CUST_TYPE TEXT, MH_CUST_AC_CODE TEXT,MH_CUST_AC_DESC TEXT, MH_ADD1 TEXT, MH_ADD2 TEXT, MH_ADD3 TEXT, MH_ADD4 TEXT, MH_CN_CODE TEXT, MH_ST_CODE TEXT, MH_CT_CODE TEXT, MH_CT_AR_CODE TEXT, MH_POSTAL TEXT, MH_MOBILE TEXT, MH_PHONE TEXT, MH_FAX TEXT, MH_EMAIL TEXT, MH_DESC TEXT, MH_STATUS TEXT, MH_APPOINT_DT TEXT, MH_CR_DT TEXT, MH_CR_UID TEXT, MH_UPD_DT TEXT, MH_UPD_UID TEXT, MH_SEND_YN TEXT, MH_SEND_DT TEXT, MH_SEND_UID TEXT, MH_APPROVE_YN TEXT, MH_APPROVE_DT TEXT, MH_APPROVE_UID TEXT, MH_FLEX_01 TEXT, MH_FLEX_02 TEXT, MH_FLEX_03 TEXT, MH_FLEX_04 TEXT, MH_FLEX_05 TEXT, MH_FLEX_06 TEXT, MH_FLEX_07 TEXT, MH_FLEX_08 TEXT, MH_FLEX_09 TEXT, MH_FLEX_10 TEXT, MH_FLEX_11 TEXT, MH_FLEX_12 TEXT, MH_FLEX_13 TEXT, MH_FLEX_14 TEXT, MH_FLEX_15 TEXT, MH_FLEX_16 TEXT, MH_FLEX_17 TEXT, MH_FLEX_18 TEXT, MH_FLEX_19 TEXT, MH_FLEX_20 TEXT) ');
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LOGI_T_MEASURE_HEAD (ID INTEGER PRIMARY KEY AUTOINCREMENT,MH_TXN_CODE TEXT,MH_TXN_DT TEXT,MH_DOC_REF TEXT,MH_LOCN_CODE TEXT,MH_SR_CODE TEXT,MH_REF_SYS_ID INTEGER,MH_REF_TXN_CODE TEXT,MH_REF_TXN_NO TEXT,MH_REF_TXN_DT TEXT,MH_SALE_REF_SYS_ID TEXT,MH_SALE_REF_TXN_CODE TEXT,MH_SALE_REF_TXN_NO TEXT,MH_SALE_REF_TXN_DT TEXT,MH_CONTACT_NO TEXT,MH_CONTACT_PERSON TEXT,MH_CUST_TYPE TEXT,MH_CUST_AC_CODE TEXT,MH_CUST_AC_DESC TEXT,MH_ADD1 TEXT,MH_ADD2 TEXT,MH_ADD3 TEXT,MH_ADD4 TEXT,MH_CN_CODE TEXT,MH_ST_CODE TEXT,MH_CT_CODE TEXT,MH_CT_AR_CODE TEXT,MH_POSTAL TEXT,MH_MOBILE TEXT,MH_PHONE TEXT,MH_FAX TEXT,MH_EMAIL TEXT,MH_DESC TEXT,MH_STATUS TEXT,MH_APPOINT_DT TEXT,LANG_CODE TEXT,USER_ID TEXT,SYS_ID TEXT,TXN_NO TEXT,MH_COMP_CODE TEXT,MH_CUST_ID TEXT)",[]);
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LOGI_T_MEASURE_TREE (ID INTEGER PRIMARY KEY AUTOINCREMENT,MT_MH_SYS_ID INTEGER TEXT,MT_COMP_CODE TEXT TEXT,MT_SYS_ID INTEGER,MT_DESC TEXT,MT_PARENT_SYS_ID INTEGER,MT_LEVEL_ID INTEGER,MT_LEVEL_TYPE TEXT,MT_BUILD_TYPE TEXT,LANG_CODE TEXT,USER_ID TEXT,MT_MODE TEXT)",[]);
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LOGI_T_MEASURE_LINES (ID INTEGER PRIMARY KEY AUTOINCREMENT,ML_SYS_ID INTEGER,ML_MH_SYS_ID INTEGER,ML_COMP_CODE TEXT,ML_LANG_CODE TEXT,ML_TXN_DT TEXT,ML_LOCN_CODE TEXT,ML_LINE TEXT,ML_BULD_TYPE TEXT,ML_BUILD TEXT,ML_FLOOR TEXT,ML_FLAT TEXT,ML_UNIT TEXT,ML_WIDTH TEXT,ML_HEIGHT TEXT,ML_MOUNT_TYPE TEXT,ML_MOUNT_ON TEXT,ML_OPERATE TEXT,ML_CONTROL TEXT,ML_OPENING TEXT,ML_PELMET TEXT,ML_DESIGN_DEPTH TEXT, ML_PROJECTION TEXT,ML_FASICA TEXT,ML_REMARKS TEXT,ML_CLOSE_YN TEXT,ML_OP_HEAD_SYS_ID TEXT,ML_SC_LINE_SYS_ID TEXT,ML_FULL_WIDTH TEXT,ML_FULL_HEIGHT TEXT,ML_LEFT_WALL TEXT,ML_RIGHT_WALL TEXT,ML_CEILING_UP TEXT,ML_FLOOR_DOWN TEXT,ML_WINDOW_DEPTH TEXT,ML_WINDOW_OPENING TEXT,ML_HANDLE_POSITION TEXT,ML_HANDLE_SIZE TEXT,ML_POWER_DISTANCE TEXT,ML_GYPSUM_YN TEXT,ML_GYPSUM_WIDTH TEXT,ML_GYPSUM_HEIGHT TEXT,ML_GYPSUM_DEPTH TEXT,ML_ROOM_NO TEXT,ML_WINDOW_NO TEXT,ML_POWER_SIDE TEXT,ML_SITE_READY_YN TEXT,ML_WINDOW_TYPE TEXT,ML_DOME_HEIGHT TEXT,ML_CORNER_DEGREE TEXT,ML_CORVE_DEPTH TEXT,ML_PARTITIONED_WINDOW_YN TEXT,ML_NO_OF_PARTITION TEXT,ML_PARTITION_01_WIDTH TEXT,ML_PARTITION_02_WIDTH TEXT,ML_PARTITION_03_WIDTH TEXT,ML_PARTITION_04_WIDTH TEXT,ML_PARTITION_05_WIDTH TEXT,ML_PARTITION_06_WIDTH TEXT,ML_PARTITION_07_WIDTH TEXT,ML_PARTITION_08_WIDTH TEXT,ML_PARTITION_09_WIDTH TEXT,ML_PARTITION_10_WIDTH TEXT,LANG_CODE TEXT,USER_ID TEXT, ML_BLOB BLOB,ML_MODE TEXT)",[]);
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LIVE_LOGI_T_MEASURE_TREE (ID INTEGER PRIMARY KEY AUTOINCREMENT,MT_MH_SYS_ID INTEGER TEXT,MT_COMP_CODE TEXT TEXT,MT_SYS_ID INTEGER,MT_DESC TEXT,MT_PARENT_SYS_ID INTEGER,MT_LEVEL_ID INTEGER,MT_LEVEL_TYPE TEXT,MT_BUILD_TYPE TEXT,LANG_CODE TEXT,USER_ID TEXT,MT_MODE TEXT)",[]);
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LIVE_LOGI_T_MEASURE_LINES (ID INTEGER PRIMARY KEY AUTOINCREMENT,ML_SYS_ID INTEGER,ML_MH_SYS_ID INTEGER,ML_COMP_CODE TEXT,ML_LANG_CODE TEXT,ML_TXN_DT TEXT,ML_LOCN_CODE TEXT,ML_LINE TEXT,ML_BULD_TYPE TEXT,ML_BUILD TEXT,ML_FLOOR TEXT,ML_FLAT TEXT,ML_UNIT TEXT,ML_WIDTH TEXT,ML_HEIGHT TEXT,ML_MOUNT_TYPE TEXT,ML_MOUNT_ON TEXT,ML_OPERATE TEXT,ML_CONTROL TEXT,ML_OPENING TEXT,ML_PELMET TEXT,ML_DESIGN_DEPTH TEXT, ML_PROJECTION TEXT,ML_FASICA TEXT,ML_REMARKS TEXT,ML_CLOSE_YN TEXT,ML_OP_HEAD_SYS_ID TEXT,ML_SC_LINE_SYS_ID TEXT,ML_FULL_WIDTH TEXT,ML_FULL_HEIGHT TEXT,ML_LEFT_WALL TEXT,ML_RIGHT_WALL TEXT,ML_CEILING_UP TEXT,ML_FLOOR_DOWN TEXT,ML_WINDOW_DEPTH TEXT,ML_WINDOW_OPENING TEXT,ML_HANDLE_POSITION TEXT,ML_HANDLE_SIZE TEXT,ML_POWER_DISTANCE TEXT,ML_GYPSUM_YN TEXT,ML_GYPSUM_WIDTH TEXT,ML_GYPSUM_HEIGHT TEXT,ML_GYPSUM_DEPTH TEXT,ML_ROOM_NO TEXT,ML_WINDOW_NO TEXT,ML_POWER_SIDE TEXT,ML_SITE_READY_YN TEXT,ML_WINDOW_TYPE TEXT,ML_DOME_HEIGHT TEXT,ML_CORNER_DEGREE TEXT,ML_CORVE_DEPTH TEXT,ML_PARTITIONED_WINDOW_YN TEXT,ML_NO_OF_PARTITION TEXT,ML_PARTITION_01_WIDTH TEXT,ML_PARTITION_02_WIDTH TEXT,ML_PARTITION_03_WIDTH TEXT,ML_PARTITION_04_WIDTH TEXT,ML_PARTITION_05_WIDTH TEXT,ML_PARTITION_06_WIDTH TEXT,ML_PARTITION_07_WIDTH TEXT,ML_PARTITION_08_WIDTH TEXT,ML_PARTITION_09_WIDTH TEXT,ML_PARTITION_10_WIDTH TEXT,LANG_CODE TEXT,USER_ID TEXT,ML_MODE TEXT)",[]);
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LIVE_BluePrintImage (ID INTEGER PRIMARY KEY AUTOINCREMENT,MI_SYS_ID INTEGER,MI_ML_SYS_ID INTEGER,MI_ML_MH_SYS_ID INTEGER,MI_ML_IMAGE TEXT,MI_USER_ID TEXT, MI_LANG_CODE TEXT, MI_ML_COMP_CODE TEXT,MI_IMAGE_PATH BLOB,MI_DESC TEXT,MI_SIZE TEXT,MI_MODE TEXT)",[]);
+				tx.executeSql("CREATE TABLE IF NOT EXISTS LIVE_LOGI_T_MEASURE_IMAGE (ID INTEGER PRIMARY KEY AUTOINCREMENT,MI_SYS_ID INTEGER,ML_SYS_ID INTEGER,ML_MH_SYS_ID INTEGER,ML_IMAGE TEXT,USER_ID TEXT, LANG_CODE TEXT, ML_COMP_CODE TEXT,IMAGE_PATH TEXT,MI_DESC TEXT,MI_SIZE TEXT,MI_MODE TEXT)",[]);
+			});
+			var mesurementTransaction_add = LSL_SYS_ID;
+	        //alert("values-"+mesurementTransaction_add);
+			localStorage.setItem("mesurementTransaction_id",mesurementTransaction_add);
+			localStorage.setItem("Mesure_Mode",mode);
+	        db.transaction(getLocalData, errorCB);
+			function getLocalData(tx) {
+				localStorage.removeItem("LiveMode");
+				localStorage.removeItem("Live_Data_HeadId");
+				localStorage.removeItem("Mode");
+			
+			<!-- Live Data check start -->
+				tx.executeSql('SELECT * FROM SelectedHeadDataValue WHERE MH_REF_SYS_ID=?', [LSL_SYS_ID], function (tx, results1) {
+					var Headlength=results1.rows.length;
+					//alert("Head lenth-"+Headlength);
+					if(Headlength==0){
+						tx.executeSql('SELECT * FROM LOGI_T_MEASURE_HEAD WHERE MH_REF_SYS_ID=?', [LSL_SYS_ID], function (tx, results1) {
+							var Headlength=results1.rows.length;
+							//alert("Head lenth-"+Headlength);
+							if(Headlength==0){
+								var measureId = localStorage.getItem("mesurementTransaction_id");
+								var HeadID = parseInt(measureId)+1;
+								var LineID = parseInt(HeadID)+1;
+								//alert(HeadID+"--"+LineID);
+								localStorage.setItem("HeadId", HeadID);
+								localStorage.setItem("LineId", LineID);
+								localStorage.setItem("HeadDataInsert", "New");
+								localStorage.setItem("Mode", "add_mode");
+								localStorage.setItem("LiveMode", "live_add_mode");
+								$('body').removeClass('loading').loader('hide');
+								window.open('Measure_Add.html', '_blank','location=no');
+							}else{
+								for (var i=0;i<Headlength;i++){
+									//prompt("Tree",JSON.stringify(results1.rows.item(i)));
+									var HeadId = results1.rows.item(i).SYS_ID;
+									var LineID = parseInt(HeadId)+1;
+									localStorage.setItem("HeadId",HeadId);
+									localStorage.setItem("LineId", LineID);
+									localStorage.setItem("Mode", "edit_mode");
+									window.open('Measure_Edit.html', '_blank','location=no');
+								}
+							}
+						});
+					}else{
+						for (var i=0;i<Headlength;i++){
+							localStorage.setItem("LiveMode", "live_edit_mode");
+							var HeadId = results1.rows.item(i).MH_SYS_ID;
+							var LineID = parseInt(HeadId)+1;
+							localStorage.setItem("HeadId",HeadId);
+							localStorage.setItem("LineId", LineID);
+							localStorage.setItem("Live_Data_HeadId",HeadId);
+							window.open('Measure_Edit.html', '_blank','location=no');
+							//window.open('Online_Measure_Edit.html', '_blank','location=no');
+						}
+					}
+				});
+			}
+			function errorCB(tx, err) {
+				//alert("Error");
+				localStorage.setItem("LiveMode", "live_add_mode");
+				localStorage.setItem("Mode", "add_mode");
+				window.open('Measure_Add.html', '_blank','location=no');
+				//alert("Error");
+				//alert("Error processing SQL: "+err);
+			}
+		}
+		function getRefSysId(refSysId,lslSysId)
+	    {
+			var refSysId=refSysId;
+			var USER_COMP_CODE = localStorage.getItem("USER_COMP_CODE");
+			var lslSysId = $('#lslSysId').val(lslSysId);
+			$.ajax
+			({
+			    type: "POST",
+			    url: "http://test.sedarspine.com/en/spineLogisticsApp/getSALE_T_DN_LINES_NEW",
+			    data:{lslRefSysId:refSysId,USER_COMP_CODE:USER_COMP_CODE},
+			    success: function (response)
+			    {
+			    	//alert(response);
+					$("#displaytable").html(response);
+					getJobDuration();
+			    },error: function (xhr, ajaxOptions, thrownError) {
+					alert(xhr);alert(ajaxOptions);alert(thrownError);
+		    	} 
+			}); 
+	    }
+		
+	    function updateJobTimeStart(dlSysId,$row)
+	    {
+		var dlsystemId = dlSysId;
+		var lslSystemId = $('#lslSysId').val();
+		var startStop="START";
+		$.ajax
+		({
+		    type: "POST",
+		    dataType:"json",
+		    url: "http://test.sedarspine.com/en/LogiCtr/updateJobStartStop",
+		    data:{dlsystemId:dlsystemId,lslSystemId:lslSystemId,startStop:startStop},
+		    success: function ()
+		    {
+			$row.find('.showStatus').html("<button class='btn btn-success disabled btn-xs' style='width: 100%;'>Started</button>");
+			$row.find('.status').val('started');
+		    },
+		});
+	    }
+	    
+	    function updateJobTimeStop(dlSysId,$row){
+			var dlsystemId = dlSysId;
+			var lslSystemId = $('#lslSysId').val();
+			var startStop="STOP";
+			var successCheck='';
+			$.ajax
+			({
+				type: "POST",
+				dataType:"json",
+				url: "http://test.sedarspine.com/en/LogiCtr/updateJobStartStop",
+				data:{dlsystemId:dlsystemId,lslSystemId:lslSystemId,startStop:startStop},
+				async:false,
+				success: function (json)
+				{
+				if (json['status']=="Success")
+				{
+					$row.find('.showStatus').html("<button class='btn btn-danger disabled btn-xs'>Completed</button>");
+					$row.find('.status').val('completed');
+					getJobMeasurement($('#LSH_SYS_ID'));
+					successCheck= true;
+				}else if (json['status']=="Error")
+				{
+					alert(json['status']);
+				}
+				},
+			});
+			if (successCheck==true) {
+				return true;
+			}
+	    }
+	    
+	    function startBtnCondition($this)
+	    {
+			$('.start').prop('disabled', true);
+			$('.end').prop('disabled', true);
+			var $row=$this.parents('.odd');
+			$row.find('[name="endCount"]').prop('disabled', false);
+	    }
+	    
+	    function endBtnCondition($this)
+	    {
+			$('.start').prop('disabled', false);
+			$('.end').prop('disabled', false);
+			var $row=$this.parents('.odd');
+			$row.find('[name="startCount"]').prop('disabled', true);
+			$row.find('[name="endCount"]').prop('disabled', true);
+	    }
+		
+	</script>
+	<!-- Append Table action end -->
+	
+	
+	
+	<script type="text/javascript">
+	    
+		$("#Form_data").submit(function(event){
+		    //alert("onclick to view");
+			var LSL_SYS_ID = $("input[name=LSL_SYS_ID]").val();
+			var LSL_LSH_SYS_ID = $("input[name=LSL_LSH_SYS_ID]").val();
+			var USER_COMP_CODE = localStorage.getItem("USER_COMP_CODE");
+			var LSL_TXN_DT = $("input[name=LSL_TXN_DT]").val();
+			var LSL_LINE = $("input[name=LSL_LINE]").val();
+			var LSL_REF_SYS_ID = $("input[name=LSL_REF_SYS_ID]").val();
+			var LSL_REF_TXN_TYPE = $("input[name=LSL_REF_TXN_TYPE]").val();
+			var LSL_REF_TXN_CODE = $("input[name=LSL_REF_TXN_CODE]").val();
+			var LSL_REF_TXN_NO = $("input[name=LSL_REF_TXN_NO]").val();
+			var LSL_REF_TXN_DT = $("input[name=LSL_REF_TXN_DT]").val();
+			var LSL_LOCN_CODE = $("input[name=LSL_LOCN_CODE]").val();
+			var LSL_REQUESTED_BY = $("input[name=LSL_REQUESTED_BY]").val();
+			var LSL_APPOINT_DT = $("input[name=LSL_APPOINT_DT]").val();
+			var LSL_CUST_AC_CODE = $("input[name=LSL_CUST_AC_CODE]").val();
+			var LSL_CUST_AC_DESC = $("input[name=LSL_CUST_AC_DESC]").val();
+			var LSL_ADD1 = $("input[name=LSL_ADD1]").val();
+			var LSL_ADD2 = $("input[name=LSL_ADD2]").val();
+			var LSL_ADD3 = $("input[name=LSL_ADD3]").val();
+			var LSL_ADD4 = $("input[name=LSL_ADD4]").val();
+			var LSL_CONTACT_PERSON = $("input[name=LSL_CONTACT_PERSON]").val();
+			var LSL_CONTACT_NO = $("input[name=LSL_CONTACT_NO]").val();
+			var LSL_CN_CODE = $("input[name=LSL_CN_CODE]").val();
+			var LSL_ST_CODE = $("input[name=LSL_ST_CODE]").val();
+			var LSL_CT_CODE = $("input[name=LSL_CT_CODE]").val();
+			var LSL_CT_AREA_CODE = $("input[name=LSL_CT_AREA_CODE]").val();
+			var LSL_POSTAL = $("input[name=LSL_POSTAL]").val();
+			var LSL_MOBILE = $("input[name=LSL_MOBILE]").val();
+			var LSL_PHONE = $("input[name=LSL_PHONE]").val();
+			var LSL_FAX = $("input[name=LSL_FAX]").val();
+			var LSL_EMAIL = $("input[name=LSL_EMAIL]").val();
+			var LSL_DESC = $("input[name=LSL_DESC]").val();
+			var LSL_JOB_CODE = $("input[name=LSL_JOB_CODE]").val();
+			var LSL_JOB_STATUS = document.getElementById("LSL_JOB_STATUS").value;
+			var LSL_RE_SCH_DT = $("input[name=LSL_RE_SCH_DT]").val();
+			var LSL_RE_SCH_REASON = document.getElementById("LSL_RE_SCH_REASON").value;
+			var LSL_EX_REMARKS = $("input[name=LSL_EX_REMARKS]").val();
+			var LSL_EX_UID = $("input[name=LSL_EX_UID]").val();
+			var LSL_EX_DT = $("input[name=LSL_EX_DT]").val();
+			var USER_ID = localStorage.getItem("user_id");
+			$.ajax
+			({
+			    url: 'http://test.sedarspine.com/en/spineLogisticsApp/LogisticsDashboard_Update',
+			    type: 'POST',
+			    data: {LSL_SYS_ID:LSL_SYS_ID,LSL_LSH_SYS_ID:LSL_LSH_SYS_ID,LSL_TXN_DT:LSL_TXN_DT,LSL_LINE:LSL_LINE,LSL_REF_SYS_ID:LSL_REF_SYS_ID,LSL_REF_TXN_TYPE:LSL_REF_TXN_TYPE,LSL_REF_TXN_CODE:LSL_REF_TXN_CODE,LSL_REF_TXN_NO:LSL_REF_TXN_NO,LSL_REF_TXN_DT:LSL_REF_TXN_DT,LSL_LOCN_CODE:LSL_LOCN_CODE,LSL_REQUESTED_BY:LSL_REQUESTED_BY,LSL_APPOINT_DT:LSL_APPOINT_DT,LSL_CUST_AC_CODE:LSL_CUST_AC_CODE,LSL_CUST_AC_DESC:LSL_CUST_AC_DESC,LSL_ADD1:LSL_ADD1,LSL_ADD2:LSL_ADD2,LSL_ADD3:LSL_ADD3,LSL_ADD4:LSL_ADD4,LSL_CONTACT_PERSON:LSL_CONTACT_PERSON,LSL_CONTACT_NO:LSL_CONTACT_NO,LSL_CN_CODE:LSL_CN_CODE,LSL_ST_CODE:LSL_ST_CODE,LSL_CT_CODE:LSL_CT_CODE,LSL_CT_AREA_CODE:LSL_CT_AREA_CODE,LSL_POSTAL:LSL_POSTAL,LSL_MOBILE:LSL_MOBILE,LSL_PHONE:LSL_PHONE,LSL_FAX:LSL_FAX,LSL_EMAIL:LSL_EMAIL,LSL_DESC:LSL_DESC,LSL_JOB_CODE:LSL_JOB_CODE,LSL_EX_UID:LSL_EX_UID,LSL_EX_DT:LSL_EX_DT,LSL_JOB_STATUS:LSL_JOB_STATUS,LSL_EX_REMARKS:LSL_EX_REMARKS,LSL_RE_SCH_REASON:LSL_RE_SCH_REASON,LSL_RE_SCH_DT:LSL_RE_SCH_DT,USER_COMP_CODE:USER_COMP_CODE,USER_ID:USER_ID},
+			    dataType: "json",
+			    success: function (json)
+			    {
+					$('#modal-dialog').modal('hide');
+					getJobMeasurementStatisticsUpdate();
+					window.location.reload();
+				if (json.status!="")
+					{
+					  //alert("Success");
+					}	
+			    },error: function (xhr, ajaxOptions, thrownError) {
+					//alert(xhr);alert(ajaxOptions);alert(thrownError);
+		    	} 
+			});
+				
+			
+	    });
+		
+		
+		function getJobMeasurementStatisticsUpdate()
+	    {
+			
+			//alert("Measurement");
+			$.ajax
+			({
+			    url: 'http://test.sedarspine.com/en/LogiCtr/getJobMeasurementStatistics',
+			    type: 'POST',
+			    data: {id:$id},
+			    dataType:"json",
+			    success: function (json)
+			    {
+				//alert(json.job_Completed);
+				$("#jobCompleted").empty();
+				$("#jobCompleted").text(json.job_Completed);
+				$("#jobTotal").empty();
+				$("#jobTotal").text(json.total_jobs);
+				$("#jobRescheduled").empty();
+				$("#jobRescheduled").text(json.jobtobe_Rescheduled);
+				$("#jobPending").empty();
+				$("#jobPending").text(json.jobtobe_pending);
+				$("#jobNotScheduled").empty();
+				$("#jobNotScheduled").text(json.NotScheduled);
+				$("#jobPartialyCompleted").empty();
+				$("#jobPartialyCompleted").text(json.PartComplete);
+				$("#jobScheduled").empty();
+				$("#jobScheduled").text(json.Scheduled);
+				$("#jobClosed").empty();
+				$("#jobClosed").text(json.jobtobe_closed);
+				
+			    }
+			});
+	    }
+		
+	    
+	</script>
+	
+	<script type="text/javascript">
+	
+	 $("#LSL_JOB_STATUS").change(function()
+			 {
+				$value=$(this).val();
+				$('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_REASON');
+				$('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_DT');
+				$('#Form_data').data('bootstrapValidator').updateStatus('LSL_RE_SCH_REASON', 'VALID').validateField('LSL_RE_SCH_REASON');
+				$('#Form_data').data('bootstrapValidator').updateStatus('LSL_RE_SCH_DT', 'VALID').validateField('LSL_RE_SCH_DT');
+				$reason=$("#LSL_RE_SCH_REASON").val();
+				$date=$("#LSL_RE_SCH_DT").val();
+				if ($value=="ReScheduled")
+				{
+				    $("#LSL_RE_SCH_REASON").removeAttr('disabled');
+				    if ($reason)
+				    {
+					$('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_REASON');
+				    }
+				    if ($date)
+				    {
+					$('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_DT');
+				    }
+				}
+			    });
+			    
+	 function refresh()
+	    {
+		$("#LSL_JOB_STATUS").change(function()
+		{
+		    $value=$(this).val();
+		    $('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_REASON');
+		    $('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_DT');
+		    $('#Form_data').data('bootstrapValidator').updateStatus('LSL_RE_SCH_REASON', 'VALID').validateField('LSL_RE_SCH_REASON');
+		    $('#Form_data').data('bootstrapValidator').updateStatus('LSL_RE_SCH_DT', 'VALID').validateField('LSL_RE_SCH_DT');
+		    $reason=$("#LSL_RE_SCH_REASON").val();
+		    $date=$("#LSL_RE_SCH_DT").val();
+		    if ($value=="ReScheduled" || $value=="Scheduled")
+		    {
+			$("#LSL_RE_SCH_REASON").attr('disabled',false);
+			$("[data-id='LSL_RE_SCH_REASON']").removeClass('disabled');
+			$("[data-id='LSL_RE_SCH_REASON'] ul li").removeClass('disabled');
+			$('.selectpicker').selectpicker('refresh');
+			if ($reason)
+			{
+			    $('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_REASON');
+			}
+			else
+			{
+			    $('#Form_data').data('bootstrapValidator').updateStatus('LSL_RE_SCH_REASON', 'INVALID').validateField('LSL_RE_SCH_REASON');
+			}
+			if ($date)
+			{
+			    $('#Form_data').bootstrapValidator('revalidateField', 'LSL_RE_SCH_DT');
+			}
+			else
+			{
+			    $('#Form_data').data('bootstrapValidator').updateStatus('LSL_RE_SCH_REASON', 'INVALID').validateField('LSL_RE_SCH_DT');
+			}
+		    }
+		    else
+		    {
+			$("#LSL_RE_SCH_REASON").val("");
+			$("#LSL_RE_SCH_REASON").attr('disabled',true);
+			$('.selectpicker').selectpicker('refresh');
+		    }
+		});
+		
+		$('#Form_data').bootstrapValidator
+		({
+		    message: 'This value is not valid',
+		    container: 'tooltip',
+		    excluded: [':disabled'],
+		    feedbackIcons:
+		    {
+			valid: 'fa fa-check',
+			invalid: 'fa fa-times',
+			validating: 'fa fa-refresh'
+		    },
+		    fields:
+		    {
+			trigger:'blur',
+			LSL_JOB_STATUS:
+			{
+			    validators:
+			    {
+				notEmpty:
+				{
+				    message: 'The job status is required and can\'t be empty'
+				},
+			    }
+			},
+			
+			LSL_RE_SCH_REASON:
+			{
+			    validators:
+			    {
+				callback:
+				{
+				    message: 'Reschedule reason is required',
+				    callback: function(value, validator)
+				    {
+					var LSL_JOB_STATUS=$("#LSL_JOB_STATUS").val();
+				        if (LSL_JOB_STATUS=="ReScheduled")
+					{
+					    if (value)
+					    {
+						return true;
+					    }
+					    else
+					    {
+						return false;
+					    }
+					}
+					else
+					{
+					    return true;
+					}
+				    }
+				}							
+			    }
+			},
+			
+			LSL_RE_SCH_DT:
+			{
+			    validators:
+			    {
+				callback:
+				{
+				    message: 'Reschedule date is required',
+				    callback: function(value, validator)
+				    {
+					var LSL_JOB_STATUS=$("#LSL_JOB_STATUS").val();
+					if (LSL_JOB_STATUS=="ReScheduled")
+					{
+					    if (value=="")
+					    {
+						return false;
+					    }
+					    else
+					    {
+						return true;
+					    }
+					}
+					else
+					{
+					   return true;
+					}
+				    }
+				}
+			    }
+			}
+		    }
+		});
+	    } 
+	</script>
+	<script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		window.resolveLocalFileSystemURL(cordova.file.externalRootDirectory,fileSystemSuccess, fileSystemFail);
+    }
+
+    // onSuccess Geolocation
+    //
+    function onSuccess(position) {
+    	var Currentlat = position.coords.latitude;
+    	var Currentlan = position.coords.longitude;
+    	localStorage.setItem("Currentlatitude", Currentlat);
+    	localStorage.setItem("Currentlongitude", Currentlan);
+    }
+
+    // onError Callback receives a PositionError object
+    //
+    function onError(error) {
+        alert('code: '    + error.code    + '\n' +'message: ' + error.message + '\n');
+    }
+
+	//folder creation start
+	function fileSystemSuccess(fileSystem) {		
+		fileSystem.getDirectory("Spine", {create: true,exclusive: false}, onDirectorySuccess, onDirectoryFail);
+	}
+	function onDirectorySuccess(parent) {
+		// Directory created successfuly
+		//alert("dir succ");
+	} 
+
+	function onDirectoryFail(error) {
+		//Error while creating directory
+		//alert("Unable to create new directory: " + error.code);
+	}
+
+	function fileSystemFail(evt) {
+		//Unable to access file system
+		//alert(evt.target.error.code);
+	}
+
+	//start the flip timer
+var count =0;
+var clock;
+function scanResult($this){
+      var code = $this;
+		alert(code);   
+		$('.DL_BOX_NO').each(function() {	
+		$row = $(this).parents('.odd');
+		$startCode = $row.find('#DL_START_QR_ID').val();
+		$status = $row.find('.status').val();
+		$RealsysId = $row.find('.sysId').val();
+		$sysId = $row.find('.DL_END_QR_ID').val();
+		$timeTaken = $row.find('.clock');
+		alert($RealsysId);
+		alert($startCode+"=="+code);
+		alert($status);
+		alert($timeTaken);
+		
+		if($status!='started' && $status!='completed' && $startCode==code){	    
+			updateJobTimeStart($RealsysId,$row);
+			clock = new FlipClock($timeTaken);
+		}else if($sysId==code && $status=='started') {
+			$time=updateJobTimeStop($RealsysId,$row);
+			alert($time);
+			if ($time==true) {
+				$.ajax
+				({
+					type: "POST",
+					url: "",
+					data:{sysId:$RealsysId},
+					dataType:"json",
+					async:false,
+					success: function (duration)
+					{
+						HrsToSeconds=toConvertHrsToSecond(duration);
+						var clock = new FlipClock($timeTaken);
+						clock.setTime(HrsToSeconds);
+						alert("stop");
+						clock.stop();
+					},
+				});
+			}
+		}
+		});
+      }
+	function getJobDuration(){
+		$('.DL_BOX_NO').each(function() {
+		$row = $(this).parents('.odd');
+		$status = $row.find('.status').val();
+		$sysId = $row.find('.sysId').val();
+		$timeTaken = $row.find('.clock');
+		$duration = $row.find('.DL_LS_TIME_TAKEN').val();	
+		if($status=='started') {
+			$.ajax
+			({
+				type: "POST",
+				url: "'",
+				data:{sysId:$sysId},
+				dataType:"json",
+				async:false,
+				success: function (duration)
+				{
+				//alert(duration[0].TIME_TAKEN);
+				//console.log(duration[0].TIME_TAKEN, 'started');
+				//console.log($timeTaken);
+				HrsToSeconds=toConvertHrsToSecond(duration[0].TIME_TAKEN);
+				var clock = new FlipClock($timeTaken);
+				clock.setTime(HrsToSeconds);
+				},
+			});
+		}else if ($status=='completed') {
+			$.ajax
+			({
+				type: "POST",
+				url: "",
+				data:{sysId:$sysId},
+				dataType:"json",
+				async:false,
+				success: function (duration){
+				//console.log(duration,'completed');
+				HrsToSeconds=toConvertHrsToSecond(duration);
+				var clock = new FlipClock($timeTaken);
+				clock.setTime(HrsToSeconds);
+				clock.stop();
+				},
+			});	    
+		}else{
+			//console.log($timeTaken);
+			var clock = new FlipClock($timeTaken);
+			clock.stop();
+		}
+		});
+    }
+	function toConvertHrsToSecond(hrsValue){
+	//var hms = '01:00:04';   // your input string
+	var getValu = hrsValue.split(':'); // split it at the colons
+	// minutes are worth 60 seconds. Hours are worth 60 minutes.
+	var seconds = (+getValu[0]) * 60 * 60 + (+getValu[1]) * 60 + (+getValu[2]); 
+	//console.log(seconds);
+	return seconds;
+    }
+</script>
+
+<!-- BarCode Function Start -->
+
+<script>
+  var count =0;
+  var clock;
+function scanResult($this){
+      var code = $this;   
+      $('.DL_BOX_NO').each(function() {	
+	$row = $(this).parents('.odd');
+	$startCode = $row.find('#DL_START_QR_ID').val();
+	$status = $row.find('.status').val();
+	$RealsysId = $row.find('.sysId').val();
+	$sysId = $row.find('.DL_END_QR_ID').val();
+	$timeTaken = $row.find('.clock');
+	console.log($RealsysId);
+	console.log($startCode);
+	console.log($status);
+	console.log($timeTaken);
+	
+	if($status!='started' && $status!='completed' && $startCode==code){	    
+	    updateJobTimeStart($RealsysId,$row);
+	    clock = new FlipClock($timeTaken);
+	}else if($sysId==code && $status=='started') {
+	    $time=updateJobTimeStop($RealsysId,$row);
+	    if ($time==true) {	    
+	    $.ajax
+		({
+		    type: "POST",
+		    url: "http://test.sedarspine.com/en/LogiCtr/getJobDurationForCompleted",
+		    data:{sysId:$RealsysId},
+		    dataType:"json",
+		    async:false,
+		    success: function (duration)
+		    {
+			console.log(duration);
+			HrsToSeconds=toConvertHrsToSecond(duration);
+			var clock = new FlipClock($timeTaken);
+			clock.setTime(HrsToSeconds);
+			clock.stop();
+		    },
+		});
+	    }
+	}
+	});
+      }
+    function getJobDuration(){
+    $('.DL_BOX_NO').each(function() {
+	$row = $(this).parents('.odd');
+	$status = $row.find('.status').val();
+	$sysId = $row.find('.sysId').val();
+	$timeTaken = $row.find('.clock');
+	$duration = $row.find('.DL_LS_TIME_TAKEN').val();
+	console.log($duration);	
+	if($status=='started') {
+	    console.log($sysId);
+	    $.ajax
+		({
+		    type: "POST",
+		    url: "http://test.sedarspine.com/en/LogiCtr/getJobDuration",
+		    data:{sysId:$sysId},
+		    dataType:"json",
+		    async:false,
+		    success: function (duration)
+		    {
+			console.log(duration[0].TIME_TAKEN, 'started');
+			console.log($timeTaken);
+			HrsToSeconds=toConvertHrsToSecond(duration[0].TIME_TAKEN);
+			var clock = new FlipClock($timeTaken);
+			clock.setTime(HrsToSeconds);
+		    },
+		});
+	}else if ($status=='completed') {
+	    $.ajax
+		({
+		    type: "POST",
+		    url: "http://test.sedarspine.com/en/LogiCtr/getJobDurationForCompleted",
+		    data:{sysId:$sysId},
+		    dataType:"json",
+		    async:false,
+		    success: function (duration)
+		    {console.log(duration,'completed');
+			HrsToSeconds=toConvertHrsToSecond(duration);
+			var clock = new FlipClock($timeTaken);
+			clock.setTime(HrsToSeconds);
+			clock.stop();
+		    },
+		});	    
+	}else{
+	    console.log($timeTaken);
+	    var clock = new FlipClock($timeTaken);
+	    clock.stop();
+	}
+    });
+    }
+    function toConvertHrsToSecond(hrsValue){
+	//var hms = '01:00:04';   // your input string
+	var getValu = hrsValue.split(':'); // split it at the colons
+	// minutes are worth 60 seconds. Hours are worth 60 minutes.
+	var seconds = (+getValu[0]) * 60 * 60 + (+getValu[1]) * 60 + (+getValu[2]); 
+	//console.log(seconds);
+	return seconds;
+    }
+</script>
+
+<!-- BarCode Function Ends -->
+
+
+	<script>
+	//Bar Code Scanner
+		function captureScan() {
+		cordova.plugins.barcodeScanner.scan(
+      function (result) {
+          alert("We got a barcode\n" +
+                "Result: " + result.text + "\n" +
+                "Format: " + result.format + "\n" +
+                "Cancelled: " + result.cancelled);
+      }, 
+      function (error) {
+          alert("Scanning failed: " + error);
+      }
+   );
+			/*cordova.plugins.barcodeScanner.scan(
+				function (result) {
+					//$('#results').html(result.text);
+					scanResult(result.text);
+				}, 
+				function (error) {
+					alert("Scanning failed: " + error);
+				}
+			);*/
+
+		}
+	</script>
+   </body>
+</html>
